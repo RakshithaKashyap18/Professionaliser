@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text Professionalizer</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Professional Text Rewriter</h1>
+      <p>Type text on the left and automatically get the rewritten version.</p>
+    </header>
+
+    <main class="panel-container">
+      <section class="panel">
+        <h2>Your Text</h2>
+        <textarea id="inputText" class="text-input" placeholder="Start typing..."></textarea>
+        <p id="wordCount" style="color:#666; font-size:14px; margin-top:8px;">0 / 200 words</p>
+        <label class="sig-label">Your Signature</label>
+<textarea id="signatureText" class="signature-input"></textarea>
+
+      </section>
+
+      <section class="panel">
+        <h2>Professional Version</h2>
+        <button id="copyBtn" class="copy-btn">Copy</button>
+        <div id="outputText" class="text-output">
+          Your professional version will appear here automatically.
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

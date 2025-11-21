@@ -1,0 +1,116 @@
+ *{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #002d73;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+
+.app-header {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.panel-container {
+  display: flex;
+  gap: 20px;
+}
+
+.panel {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  border: 2px solid #ffb81a;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-shadow: #ffb81a;
+
+}
+
+.text-input,
+.text-output {
+  width: 100%;
+  min-height: 250px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  background: #fafafa;
+  font: poppins;
+}
+
+.text-output {
+  white-space: pre-wrap;
+  overflow-y: auto;     /* Enables vertical scrolling */
+  max-height: 450px;    /* Ensures box doesn't grow forever */
+  padding-right: 12px;  /* Space for the scrollbar */
+}
+
+
+
+.primary-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .panel-container {
+    flex-direction: column;
+  }
+}
+.signature-input {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  background: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.sig-label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #002D73;
+}
+.signature-display {
+  color: #002D73;        /* BLUE COLOR */
+  font-weight: 600;
+  margin-top: 14px;
+  /* preserves line breaks */
+  font-family: "Poppins", sans-serif;
+}
+
+.copy-btn {
+  background: #FFB81A;
+  color: #002D73;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.copy-btn:hover {
+  background: #e6a417;
+}
